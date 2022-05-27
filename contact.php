@@ -15,7 +15,7 @@
             <p>".$contact_message."</p>";
             
             
- $to = "leads@nxispwr.com"; //Replace your real receiving email address
+ $to = "info@nxispwr.com"; //Replace your real receiving email address
 
  $header = "From:jgalindo@nxispwr.com \r\n"; //Replace with your real web master email
  $header .= "MIME-Version: 1.0\r\n";
