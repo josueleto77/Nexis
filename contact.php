@@ -21,7 +21,7 @@
  $header .= "X-Mailer: PHP/". phpversion();
  $header .= "Content-type: text/html". "r/n";
  
- $mail_send = @mail($to,$subject,$message,$header);
+ $mail = @mail($to,$subject,$message,$header);
  
  if( $mail_send == true ) {
     echo "<h4>Your message send successfully!.</h4>";
