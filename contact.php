@@ -18,7 +18,7 @@
  $to = "info@nxispwr.com"; //Replace your real receiving email address
 
  $header = "From: info@nxispwr.com "."\r\n";
- $header .= "MIME-Version: 1.0\r\n";
+ $header .= "X-Mailer: PHP/". phpversion();
  $header .= "Content-type: text/html\r\n";
  
  $mail_send = @mail ($to,$subject,$message,$header);
