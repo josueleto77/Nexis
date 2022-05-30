@@ -15,13 +15,13 @@
             <p>".$contact_message."</p>";
             
             
- $to = "info@nxispwr.com"; //Replace your real receiving email address
+ $to = "info@nxispwr.com". "r/n";
 
- $header = "From: info@nxispwr.com "."\r\n";
+ $header = "From: info@nxispwr.com ". "\r\n";
  $header .= "X-Mailer: PHP/". phpversion();
- $header .= "Content-type: text/html\r\n";
+ $header .= "Content-type: text/html". "r/n"
  
- $mail_send = @mail ($to,$subject,$message,$header);
+ $mail_send = @mail($to,$subject,$message,$header);
  
  if( $mail_send == true ) {
     echo "<h4>Your message send successfully!.</h4>";
