@@ -19,7 +19,7 @@
 
  $header = "From: info@nxispwr.com ". "\r\n";
  $header .= "X-Mailer: PHP/". phpversion();
- $header .= "Content-type: text/html". "r/n"
+ $header .= "Content-type: text/html". "r/n";
  
  $mail_send = @mail($to,$subject,$message,$header);
  
