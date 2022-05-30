@@ -24,9 +24,9 @@
  $mail_send = @mail ($to,$subject,$message,$header);
  
  if( $mail_send == true ) {
-    echo "Your message send successfully!.";
+    echo "<h4>Your message send successfully!.</h4>";
  }else {
-    echo "Your message could not be send!.";
+    echo "<h4>Your message could not be send!.</h4>";
  }
 
 
