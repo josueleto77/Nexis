@@ -162,170 +162,167 @@
             </div>
         </div>
         <!-- breadcrumb end -->
-
-
-  <head>
-    <title>Order form</title>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet' type='text/css'>
+<head>
+    <title>Educational registration form</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
     <style>
       html, body {
-      height: 100%;
+      min-height: 100%;
       }
-      body, input, select { 
+      body, div, form, input, select, p { 
       padding: 0;
       margin: 0;
       outline: none;
       font-family: Roboto, Arial, sans-serif;
       font-size: 16px;
-      color:#fff;
+      color: #eee;
       }
-      h1, h3 {
+      body {
+      background: url("/uploads/media/default/0001/01/b5edc1bad4dc8c20291c8394527cb2c5b43ee13c.jpeg") no-repeat center;
+      background-size: cover;
+      }
+      h1, h2 {
+      text-transform: uppercase;
       font-weight: 400;
       }
-      h1 {
-      font-size: 32px;
+      h2 {
+      margin: 0 0 0 8px;
       }
-      h3 {
-      color:#000000;
+      .main-block {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      padding: 25px;
+      background: rgba(0, 0, 0, 0.5); 
       }
-      .main-block, .info {
+      .left-part, form {
+      padding: 25px;
+      }
+      .left-part {
+      text-align: center;
+      }
+      .fa-graduation-cap {
+      font-size: 72px;
+      }
+      form {
+      background: rgba(0, 0, 0, 0.7); 
+      }
+      .title {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      }
+      .info {
       display: flex;
       flex-direction: column;
       }
-      .main-block {
-      justify-content: center;
-      align-items: center;
-      width: 100%; 
-      min-height: 100%;
-      background: url("/uploads/media/default/0001/01/e7a97bd9b2d25886cc7b9115de83b6b28b73b90b.jpeg") no-repeat center;
-      background-size: cover;
-      }
-      form {
-      width: 80%; 
-      padding: 25px;
-      margin-bottom: 20px;
-      background:#ff8f37}
       input, select {
       padding: 5px;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
       background: transparent;
       border: none;
       border-bottom: 1px solid #eee;
       }
       input::placeholder {
-      color:#fff
+      color: #eee;
+      }
+      option:focus {
+      border: none;
       }
       option {
-      background:#fff; 
+      background: black; 
       border: none;
       }
-      .metod {
-      display: flex; 
+      .checkbox input {
+      margin: 0 10px 0 0;
+      vertical-align: middle;
       }
-      input[type=radio] {
-      display: none;
+      .checkbox a {
+      color: #26a9e0;
       }
-      label.radio {
-      position: relative;
+      .checkbox a:hover {
+      color: #85d6de;
+      }
+      .btn-item, button {
+      padding: 10px 5px;
+      margin-top: 20px;
+      border-radius: 5px; 
+      border: none;
+      background: #26a9e0; 
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 400;
+      color: #fff;
+      }
+      .btn-item {
       display: inline-block;
-      margin-right: 20px;
-      text-indent: 32px;
-      cursor: pointer;
-      }
-      label.radio:before {
-      content: "";
-      position: absolute;
-      top: -1px;
-      left: 0;
-      width: 17px;
-      height: 17px;
-      border-radius: 50%;
-      border: 2px solid #1c87c9;
-      }
-      label.radio:after {
-      content: "";
-      position: absolute;
-      width: 8px;
-      height: 4px;
-      top: 5px;
-      left: 5px;
-      border-bottom: 3px solid #1c87c9;
-      border-left: 3px solid #1c87c9;
-      transform: rotate(-45deg);
-      opacity: 0;
-      }
-      input[type=radio]:checked + label:after {
-      opacity: 1;
+      margin: 20px 5px 0;
       }
       button {
-      display: block;
-      width: 200px;
-      padding: 10px;
-      margin: 20px auto 0;
-      border: none;
-      border-radius: 5px; 
-      background: #1c87c9; 
-      font-size: 14px;
-      font-weight: 600;
-      color:#ff8f37 ;
-      }
-      button:hover {
-      background: #fff;
-      }
-      @media (min-width: 568px) {
-      .info {
-      flex-flow: row wrap;
-      justify-content: space-between;
-      }
-      input {
-      width: 46%;
-      }
-      input.fname {
       width: 100%;
       }
-      select {
-      width: 48%;
+      button:hover, .btn-item:hover {
+      background: #85d6de;
+      }
+      @media (min-width: 568px) {
+      html, body {
+      height: 100%;
+      }
+      .main-block {
+      flex-direction: row;
+      height: calc(100% - 50px);
+      }
+      .left-part, form {
+      flex: 1;
+      height: auto;
       }
       }
     </style>
   </head>
   <body>
     <div class="main-block">
-      <h1>Order Form</h1>
-      <form action="https://formsubmit.co/info@nxispwr.com" method="POST">
+      <div class="left-part">
+        <i class="fas fa-graduation-cap"></i>
+        <h1>Register to our courses</h1>
+        <p>W3docs provides free learning materials for programming languages like HTML, CSS, Java Script, PHP etc.</p>
+        <div class="btn-group">
+          <a class="btn-item" href="https://www.w3docs.com/learn-html.html">Learn HTML</a>
+          <a class="btn-item" href="https://www.w3docs.com/quiz/#">Select Quiz</a>
+        </div>
+      </div>
+      <form action="/">
+        <div class="title">
+          <i class="fas fa-pencil-alt"></i> 
+          <h2>Register here</h2>
+        </div>
         <div class="info">
           <input class="fname" type="text" name="name" placeholder="Full name">
           <input type="text" name="name" placeholder="Email">
           <input type="text" name="name" placeholder="Phone number">
-          <input type="text" name="name" placeholder="Today's date">
-          <input type="text" name="name" placeholder="Order due date">
-          <input type="text" name="name" placeholder="Date of event">
-          <input type="text" name="name" placeholder="Time of event">
-          <input type="text" name="name" placeholder="Event location">
-          <input type="text" name="name" placeholder="Type of event">
+          <input type="password" name="name" placeholder="Password">
           <select>
-            <option value="number" disabled selected>Your Average Electric Bill</option>
-            <option value="10">$100-$200</option>
-            <option value="20">$200-$300</option>
-            <option value="30">$300-$400</option>
-            <option value="40">$400-$500</option>
-            <option value="50">$500-$600</option>
-              <option value="50">$600-$700</option>
-          </select>
-          <select>
-            <option value="time">Are You A Home Owner?</option>
-            <option value="8">Yes</option>
-            <option value="9">No</option>
-            <option value="10">I Will Be Soon</option>
-            
+            <option value="course-type" selected>Course type*</option>
+            <option value="short-courses">Short courses</option>
+            <option value="featured-courses">Featured courses</option>
+            <option value="undergraduate">Undergraduate</option>
+            <option value="diploma">Diploma</option>
+            <option value="certificate">Certificate</option>
+            <option value="masters-degree">Masters degree</option>
+            <option value="postgraduate">Postgraduate</option>
           </select>
         </div>
-        
-        <button href="/" class="button">Submit</button>
+        <div class="checkbox">
+          <input type="checkbox" name="checkbox"><span>I agree to the <a href="https://www.w3docs.com/privacy-policy">Privacy Poalicy for W3Docs.</a></span>
+        </div>
+        <button type="submit" href="/">Submit</button>
       </form>
     </div>
   </body>
+
+  
 </html>  
         <div  align="center"> <img src="img/service/solar system.jpg" width="800px" height="600"> </div>        
          <div class="contact-map">
